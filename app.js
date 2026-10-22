@@ -60,7 +60,7 @@
     btn.disabled = true;
     msg.className = 'form-msg';
     msg.textContent = 'Илгээж байна…';
-    fetch(form.action, { method: 'POST', body: new FormData(form) })
+    fetch(form.action, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
       .then(function (r) { return r.json(); })
       .then(function (d) {
         msg.className = 'form-msg ' + (d.ok ? 'ok' : 'err');

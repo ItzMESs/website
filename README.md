@@ -11,7 +11,19 @@
 - Лого — `index.html`-ийн эхэнд байгаа `<symbol id="ulzii">` (өлзий) SVG-г солих эсвэл `<img>` болгоно.
 - Үнэ — тооцоолуурын `option value`, `data-price` утгууд (төгрөгөөр).
 - Өнгө — `style.css`-ийн `:root` доторх `--red`, `--red-2`. Хээнүүд нь мөн тэнд (`--alhan`, `--corner`, `--diamonds`).
-- `send.php` — `$TO` хувьсагчид формын хүсэлт хүлээн авах имэйлээ бичнэ.
+
+## Vercel дээр асаах
+1. https://vercel.com → **Add New… → Project** → GitHub-аас `website` репог **Import** хийнэ.
+2. Framework Preset: **Other**. Build Command, Output Directory хоосон үлдээгээд **Deploy** дарна. Сайт шууд ажиллана.
+3. Форм имэйл илгээхийн тулд (`api/send.js`):
+   - https://resend.com дээр бүртгүүлээд **API Keys** хэсгээс түлхүүр авна.
+   - Vercel → Project → **Settings → Environment Variables** хэсэгт нэмнэ:
+     - `RESEND_API_KEY` — Resend-ийн түлхүүр
+     - `CONTACT_TO` — хүсэлт хүлээн авах имэйл
+     - `CONTACT_FROM` — (заавал биш) Resend дээр баталгаажуулсан домэйны хаяг, ж: `Студи <noreply@tany-domain.mn>`
+   - **Deployments → Redeploy** хийнэ.
+
+   `CONTACT_FROM` тавиагүй үед Resend-ийн туршилтын хаягаас илгээх бөгөөд зөвхөн Resend-д бүртгүүлсэн өөрийн имэйл рүүгээ л хүлээн авна.
 
 ## cPanel дээр тавих
-Энэ репогийн файлуудыг `public_html` (эсвэл дэд домэйны хавтас) руу хуулахад л болно. PHP-ийн `mail()` ажилладаг хостинг дээр форм имэйл илгээнэ. Өгөгдлийн сан шаардлагагүй.
+Энэ репогийн файлуудыг `public_html` (эсвэл дэд домэйны хавтас) руу хуулахад л болно. Энэ үед `index.html` доторх `action="/api/send"`-г `action="send.php"` болгож, `send.php`-ийн `$TO` хувьсагчид имэйлээ бичнэ. PHP-ийн `mail()` ажилладаг хостинг дээр форм имэйл илгээнэ. Өгөгдлийн сан шаардлагагүй.
