@@ -48,9 +48,15 @@
     $('total').textContent = fmt(total);
     $('range').textContent = 'Ойролцоогоор: ' + fmt(total * 0.85) + ' – ' + fmt(total * 1.2);
     $('estimate').value = fmt(total);
+    $('hostNote').hidden = $('type').value !== '1000000';
   }
   form.addEventListener('change', calc);
   calc();
+
+  // Багцын товч дарахад тооцоолуурт тухайн төрлийг сонгоно
+  document.querySelectorAll('.plan [data-type]').forEach(function (b) {
+    b.addEventListener('click', function () { $('type').value = b.dataset.type; calc(); });
+  });
 
   // Илгээх (send.php руу)
   form.addEventListener('submit', function (e) {

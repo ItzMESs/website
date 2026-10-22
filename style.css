@@ -231,13 +231,15 @@ section { scroll-margin-top: 96px; }
 .tags span { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: #ccc; border: 1px solid #444; padding: 3px 8px; }
 
 /* Багц */
-.plans { display: grid; grid-template-columns: repeat(2, minmax(0, 400px)); justify-content: center; gap: 24px; margin-top: 50px; }
+.plans { display: grid; grid-template-columns: repeat(3, minmax(0, 380px)); justify-content: center; gap: 24px; margin-top: 50px; }
 .plan { position: relative; background: var(--card); border: 2px solid #fff; padding: 52px 32px 36px; display: flex; flex-direction: column; }
 .plan.featured { background: var(--paper) var(--diamonds); color: var(--ink); border-color: var(--paper); }
 .plan.featured li { color: #333; border-color: #d2dbe9; }
 .plan.featured .grad-text { background: none; color: var(--accent); }
 .plan .pop { position: absolute; top: -14px; right: 18px; background: var(--grad); color: #fff; font-size: 10px; font-weight: 700; padding: 5px 12px; text-transform: uppercase; font-family: "Unbounded", "Montserrat", sans-serif; }
 .plan h3 { font-size: 18px; }
+.plan-note { font-size: 12px; color: var(--accent-2); margin: -14px 0 20px; }
+.summary .plan-note { margin: 0 0 6px; }
 .plan .price { font-family: "Unbounded", "Montserrat", sans-serif; font-weight: 800; font-size: 26px; margin: 14px 0 24px; }
 .plan ul { list-style: none; display: grid; gap: 10px; margin-bottom: 30px; flex: 1; }
 .plan li { font-size: 14px; color: #ccc; padding-bottom: 10px; border-bottom: 1px solid var(--line); display: flex; gap: 10px; }
@@ -308,6 +310,7 @@ section { scroll-margin-top: 96px; }
 }
 @media (max-width: 960px) {
   .services, .portfolio, .f-cols { grid-template-columns: 1fr 1fr; }
+  .plans { grid-template-columns: minmax(0, 440px); }
   .svc, .svc:nth-child(n+4) { grid-column: auto; }
   .svc:last-child:nth-child(odd) { grid-column: span 2; }
   .about, .calc { grid-template-columns: 1fr; }
