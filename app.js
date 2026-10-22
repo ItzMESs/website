@@ -52,7 +52,7 @@
   form.addEventListener('change', calc);
   calc();
 
-  // Илгээх (send.php руу)
+  // Илгээх (api/send руу)
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var msg = $('formMsg');
