@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
       method: 'POST',
       headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: CONTACT_FROM || 'Studio <onboarding@resend.dev>',
+        from: CONTACT_FROM || 'NationalOne <onboarding@resend.dev>',
         to: CONTACT_TO.split(',').map((s) => s.trim()),
         reply_to: email,
         subject: `Үнийн санал: ${name}`,

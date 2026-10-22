@@ -1,7 +1,7 @@
 <?php
 // Үнийн санал авах формын хүсэлтийг имэйлээр илгээнэ.
 // Өөрийн имэйл хаягаа энд бичнэ:
-$TO = 'info@example.mn';
+$TO = 'messdevelopment1@gmail.com';
 
 header('Content-Type: application/json; charset=utf-8');
 

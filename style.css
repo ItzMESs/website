@@ -81,7 +81,7 @@ h1, h2, h3, h4, .display {
 /* ---------- Толгой хэсэг ---------- */
 .header { position: fixed; inset: 0 0 auto 0; z-index: 50; background: #000; }
 .header .bar { display: flex; align-items: center; justify-content: space-between; height: 82px; gap: 20px; }
-.logo { display: flex; align-items: center; gap: 12px; font-family: "Unbounded", "Montserrat", sans-serif; font-weight: 800; font-size: 18px; text-transform: lowercase; white-space: nowrap; }
+.logo { display: flex; align-items: center; gap: 12px; font-family: "Unbounded", "Montserrat", sans-serif; font-weight: 800; font-size: 18px; text-transform: none; white-space: nowrap; }
 .logo svg { width: 52px; height: 52px; }
 .nav { display: flex; align-items: center; gap: 6px; }
 .nav > a, .nav .dd > button {
