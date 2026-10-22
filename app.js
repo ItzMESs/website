@@ -75,4 +75,16 @@
   });
 
   $('year').textContent = new Date().getFullYear();
+
+  // Ачаалах дэлгэц: хуудас ачаалагдмагц (хамгийн багадаа 0.6 сек) алга болно
+  var start = Date.now();
+  function hideLoader() {
+    setTimeout(function () { $('loader').classList.add('done'); }, Math.max(0, 600 - (Date.now() - start)));
+  }
+  if (document.readyState === 'complete') hideLoader(); else window.addEventListener('load', hideLoader);
+
+  // Дээшээ буцах товч
+  var toTop = $('toTop');
+  window.addEventListener('scroll', function () { toTop.classList.toggle('show', window.scrollY > 600); }, { passive: true });
+  toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 })();

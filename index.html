@@ -18,6 +18,12 @@
 </head>
 <body>
 
+<!-- Ачаалах дэлгэц: JS ажиллахгүй үед ч CSS-ээр 3 секундын дараа алга болно -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="logo.webp" alt="" width="96" height="96">
+  <div class="loader-bar"><span></span></div>
+</div>
+
 <!-- Лого: өөрийн логогоор солих бол энэ SVG-г <img src="logo.png"> болгоно -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
@@ -376,6 +382,8 @@
     <div class="f-copy">© <span id="year"></span> NationalOne. Бүх эрх хуулиар хамгаалагдсан.</div>
   </div>
 </footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Дээшээ буцах">↑</button>
 
 <script src="app.js"></script>
 </body>
