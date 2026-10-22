@@ -293,6 +293,20 @@ section { scroll-margin-top: 96px; }
 .f-legal { text-align: center; margin-top: 36px; font-size: 12px; }
 .f-copy { text-align: center; border-top: 1px solid var(--line); margin-top: 24px; padding-top: 24px; font-size: 12px; }
 
+/* Нууцлал, нөхцөлийн хуудас */
+.doc-top { border-bottom: 1px solid #222; }
+.doc-top .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.doc-top .logo img { width: 40px; height: 40px; }
+.doc-top .btn { padding: 11px 18px; }
+.doc { max-width: 780px; padding-top: 60px; padding-bottom: 80px; }
+.doc h1 { font-size: clamp(28px, 5vw, 42px); margin: 10px 0 24px; }
+.doc h2 { font-size: 16px; margin: 36px 0 12px; }
+.doc p, .doc li { color: #cfcfcf; font-size: 15px; }
+.doc ul { padding-left: 20px; display: grid; gap: 6px; margin: 8px 0; }
+.doc a { color: var(--accent-2); }
+.doc-foot { padding-top: 30px; border-top: 1px solid #222; }
+.doc-foot .f-legal { margin-top: 0; }
+
 /* Гүйлгэхэд гарч ирэх */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s, transform .7s; }
 .reveal.in { opacity: 1; transform: none; }
