@@ -32,6 +32,7 @@ module.exports = async (req, res) => {
     + `Утас: ${clean(b.phone)}\n`
     + `Төрөл: ${TYPES[b.type] || '-'}\n`
     + `Нэмэлт: ${extras.length ? extras.join(', ') : '-'}\n`
+    + `Төсөв: ${clean(b.budget) || '-'}\n`
     + `Тооцоолсон үнэ: ${clean(b.estimate)}\n\n`
     + `Зурвас:\n${String(b.message ?? '').replace(/<[^>]*>/g, '')}\n`;
 

@@ -32,6 +32,7 @@ $body = "Шинэ үнийн санал авах хүсэлт\n\n"
     . "Утас: " . $clean('phone') . "\n"
     . "Төрөл: " . ($types[$_POST['type'] ?? ''] ?? '-') . "\n"
     . "Нэмэлт: " . ($extras ? implode(', ', $extras) : '-') . "\n"
+    . "Төсөв: " . ($clean('budget') ?: '-') . "\n"
     . "Тооцоолсон үнэ: " . $clean('estimate') . "\n\n"
     . "Зурвас:\n" . strip_tags($_POST['message'] ?? '') . "\n";
 
