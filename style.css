@@ -235,6 +235,7 @@ section { scroll-margin-top: 96px; }
 .plan { position: relative; background: var(--card); border: 2px solid #fff; padding: 52px 32px 36px; display: flex; flex-direction: column; }
 .plan.featured { background: var(--paper) var(--diamonds); color: var(--ink); border-color: var(--paper); }
 .plan.featured li { color: #333; border-color: #d2dbe9; }
+.plan.featured .plan-note { color: var(--accent); }
 .plan.featured .grad-text { background: none; color: var(--accent); }
 .plan .pop { position: absolute; top: -14px; right: 18px; background: var(--grad); color: #fff; font-size: 10px; font-weight: 700; padding: 5px 12px; text-transform: uppercase; font-family: "Unbounded", "Montserrat", sans-serif; }
 .plan h3 { font-size: 18px; }

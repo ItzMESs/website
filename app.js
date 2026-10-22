@@ -48,7 +48,6 @@
     $('total').textContent = fmt(total);
     $('range').textContent = 'Ойролцоогоор: ' + fmt(total * 0.85) + ' – ' + fmt(total * 1.2);
     $('estimate').value = fmt(total);
-    $('hostNote').hidden = $('type').value !== '1000000';
   }
   form.addEventListener('change', calc);
   calc();
