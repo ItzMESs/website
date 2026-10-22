@@ -1,4 +1,4 @@
-// Vercel дээрх үнийн санал авах форм (send.php-ийн оронд).
+// Vercel дээрх үнийн санал авах форм.
 // Vercel → Project → Settings → Environment Variables:
 //   RESEND_API_KEY  — https://resend.com дээрээс авсан түлхүүр
 //   CONTACT_TO      — хүсэлт хүлээн авах имэйл
