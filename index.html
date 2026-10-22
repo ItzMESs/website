@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Таны Студи — Вэбсайт, апп хөгжүүлэлт</title>
+<meta name="description" content="Вэбсайт, онлайн дэлгүүр, мобайл апп, захиалгат систем хөгжүүлэлт. Улаанбаатар.">
+<meta property="og:title" content="Таны Студи — Вэбсайт, апп хөгжүүлэлт">
+<meta property="og:description" content="Төвөггүй, найдвартай, сайхан вэбсайт.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Unbounded:wght@700;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Лого: өөрийн логогоор солих бол энэ SVG-г <img src="logo.png"> болгоно -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="ulzii" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 2.2"/>
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" transform="rotate(45 32 32)">
+        <rect x="21" y="21" width="22" height="22"/>
+        <path d="M28.3 21V43M35.7 21V43M21 28.3H43M21 35.7H43"/>
+        <circle cx="21" cy="21" r="5"/><circle cx="43" cy="21" r="5"/><circle cx="21" cy="43" r="5"/><circle cx="43" cy="43" r="5"/>
+      </g>
+    </symbol>
+    <symbol id="orn" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="3"><path d="M16 2L30 16L16 30L2 16Z"/><path d="M16 10L22 16L16 22L10 16Z"/></g>
+      <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ugalz" viewBox="0 0 140 44">
+      <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+        <path d="M4 40H136"/>
+        <path d="M24 40C12 40 10 27 20 25C28 23 30 34 23 34"/>
+        <path d="M48 40C38 22 54 6 70 15C86 6 102 22 92 40"/>
+        <path d="M58 32C55 23 65 19 70 26C75 19 85 23 82 32"/>
+        <path d="M116 40C128 40 130 27 120 25C112 23 110 34 117 34"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="header">
+  <div class="wrap bar">
+    <a href="#home" class="logo" aria-label="Нүүр"><svg style="color:var(--red)"><use href="#ulzii"/></svg><span>таны студи</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="active">Эхлэл</a>
+      <div class="dd">
+        <button type="button" aria-haspopup="true">Үйлчилгээнүүд ⌄</button>
+        <div class="dd-menu">
+          <a href="#services"><i>▭</i><span><b>Вэбсайт хөгжүүлэлт</b>Брэндийг тань тод харуулах, утсанд тохирсон орчин үеийн сайт.</span></a>
+          <a href="#services"><i>🛒</i><span><b>Онлайн дэлгүүр хөгжүүлэлт</b>QPay, карт, И-баримттай онлайн дэлгүүр.</span></a>
+          <a href="#services"><i>▯</i><span><b>Мобайл апп хөгжүүлэлт</b>Android, iOS апп шинээр бүтээх эсвэл сайжруулах.</span></a>
+          <a href="#services"><i>⚙</i><span><b>Захиалгат систем</b>CRM, бараа бүртгэл, дотоод удирдлагын систем.</span></a>
+          <a href="#ai"><i>✺</i><span><b>AI интеграц</b>Чатбот, автомат хариулт, контент үүсгэлт.</span></a>
+          <a href="#services"><i>≡</i><span><b>Арчилгаа, хостинг, хурд</b>Хостинг, домэйн, DNS, нөөцлөлт, хурдны засвар.</span></a>
+        </div>
+      </div>
+      <a href="#about">Бидний тухай</a>
+      <a href="#faq">Түгээмэл асуулт</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#pricing">Багцууд</a>
+    </nav>
+    <a href="#quote" class="btn">Үнэгүй үнэлгээ</a>
+    <button class="burger" id="burger" aria-label="Цэс">☰</button>
+  </div>
+  <div class="alhan-band"></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-kicker"><svg class="ornament"><use href="#orn"/></svg><span>Вэб студи · Улаанбаатар</span><svg class="ornament"><use href="#orn"/></svg></div>
+    <h1>Төвөггүй,<br><span class="red">найдвартай</span><br>сайхан вэбсайт</h1>
+    <p>Цэвэрхэн код, ойлгомжтой загвар, бизнест тань бодит үр дүн авчрах шийдлийг бид хийж өгнө.</p>
+    <svg class="ugalz"><use href="#ugalz"/></svg>
+    <div class="hero-actions">
+      <a href="#quote" class="btn btn-pill">+ Эхлэх</a>
+      <a href="#portfolio" class="btn btn-pill btn-ghost">Портфолио үзэх</a>
+    </div>
+  </div>
+</section>
+
+<!-- ҮЙЛЧИЛГЭЭ -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title">Бидний <span class="grad-text">үйлчилгээ</span></h2></div>
+    <p class="sec-sub reveal">Жижиг бизнес, брэнд, хувь хүнд зориулсан онлайн шийдлүүд — эхнээс нь дуустал.</p>
+    <div class="services">
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M9 9l-2 2 2 2M15 9l2 2-2 2"/></svg>
+        <h3>Вэбсайт хөгжүүлэлт</h3>
+        <p>Утсанд төгс харагдах, хурдан ачаалдаг, хайлтад сайн гардаг танилцуулга сайт.</p>
+        <a href="#quote" class="more">Дэлгэрэнгүй →</a>
+      </article>
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM1 2h3.3l.9 2H21a1 1 0 0 1 .9 1.4l-3.6 7a2 2 0 0 1-1.7 1H8.1l-.9 1.6H19v2H5.6a1 1 0 0 1-.9-1.5L6.3 12 2.7 4H1V2Z"/></svg>
+        <h3>Онлайн дэлгүүр хөгжүүлэлт</h3>
+        <p>QPay, карт, банкны шилжүүлгээр төлбөр авдаг, бараа, захиалгаа удирддаг дэлгүүр.</p>
+        <a href="#quote" class="more">Дэлгэрэнгүй →</a>
+      </article>
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        <h3>Мобайл апп хөгжүүлэлт</h3>
+        <p>Android, iOS дээр ажиллах апп — хэрэглэгчиддээ гар утсаар нь шууд хүрнэ.</p>
+        <a href="#quote" class="more">Дэлгэрэнгүй →</a>
+      </article>
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="3"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2M4 4l1.5 1.5M12.5 12.5 14 14M4 14l1.5-1.5M12.5 5.5 14 4"/><circle cx="18" cy="18" r="2"/><path d="M18 14v1M18 21v1M14 18h1M21 18h1"/></svg>
+        <h3>Захиалгат систем хөгжүүлэлт</h3>
+        <p>Цаг захиалга, CRM, бараа материал, дотоод удирдлага — танай ажлын урсгалд яг тааруулна.</p>
+        <a href="#quote" class="more">Дэлгэрэнгүй →</a>
+      </article>
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-2ZM15 3a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg>
+        <h3>AI интеграц</h3>
+        <p>Чатбот, автомат хариулт, контент үүсгэлт — давтагддаг ажлаа хиймэл оюунд даатга.</p>
+        <a href="#ai" class="more">Дэлгэрэнгүй →</a>
+      </article>
+      <article class="svc corners reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
+        <h3>Арчилгаа, хостинг, хурд</h3>
+        <p>Домэйн, хостинг, SSL, нөөцлөлт, шинэчлэлт — сайтаа санаа зовохгүй ажиллуул.</p>
+        <a href="#quote" class="more">Дэлгэрэнгүй →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- АЖЛЫН ЯВЦ -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title">Бидэнтэй <span class="grad-text">хамтран ажиллах</span></h2></div>
+    <p class="sec-sub reveal">Анхны ярилцлагаас нээлт хүртэл ил тод, ойлгомжтой алхмууд.</p>
+    <div class="steps">
+      <div class="step reveal"><span class="n">01</span><div><h3>Танилцах ярилцлага</h3><p>Таны зорилго, санаа, хэрэгцээг сонсож, юу хийх вэ гэдгийг тодорхойлно.</p></div></div>
+      <div class="step reveal"><span class="n">02</span><div><h3>Төслийн төлөвлөгөө</h3><p>Хуудас, боломж, хугацаа, үнийг тодорхой бичсэн төлөвлөгөө гаргана.</p></div></div>
+      <div class="step reveal"><span class="n">03</span><div><h3>Гэрээ</h3><p>Төлөвлөгөөг баталж, гэрээ байгуулаад ажлаа эхлүүлнэ.</p></div></div>
+      <div class="step reveal"><span class="n">04</span><div><h3>Дизайн ба хөгжүүлэлт</h3><p>Загварыг танаар батлуулж, дараа нь кодлон, явцыг тогтмол харуулна.</p></div></div>
+      <div class="step reveal"><span class="n">05</span><div><h3>Нээлт</h3><p>Бүх төхөөрөмж дээр шалгаж, сайтаа олон нийтэд нээнэ.</p></div></div>
+      <div class="step reveal"><span class="n">06</span><div><h3>Тогтмол дэмжлэг</h3><p>Нээлтийн дараа ч засвар, шинэчлэлт, зөвлөгөөгөөр дэмжинэ.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI -->
+<section id="ai" class="alt">
+  <div class="wrap">
+    <div class="ai-box reveal">
+      <span class="eyebrow">Олон хүний асуудаг зүйл</span>
+      <h2 class="sec-title" style="margin-top:10px">AI-ийн тухай <span class="grad-text">шулуухан хэлэхэд…</span></h2>
+      <p class="sec-sub" style="max-width:none">Бид ажлаа хурдасгахын тулд AI хэрэгслүүдийг ашигладаг. Гэхдээ код бүрийг хүн уншиж, шалгаж, хариуцлагыг нь бүрэн хүлээдэг.</p>
+      <blockquote>AI бол хэрэгсэл. Чанар, аюулгүй байдал, <em>эцсийн шийдвэр</em> — үргэлж бидний гарт.</blockquote>
+      <div class="ai-grid">
+        <div><h4>AI юу хийдэг вэ</h4><p>Давтагддаг код, туршилт, баримт бичиг, санаа гаргахад туслан хугацааг хэмнэдэг.</p></div>
+        <div><h4>Хүн юу хийдэг вэ</h4><p>Бүтэц, дизайн, аюулгүй байдал, кодын хяналт, эцсийн чанарын шалгалт.</p></div>
+        <div><h4>Танд ямар ашигтай вэ</h4><p>Хурдан хүлээлгэж өгнө, үнэ боломжийн, чанар буурахгүй.</p></div>
+        <div><h4>Таны мэдээлэл</h4><p>Нууц мэдээлэл, нууц үг, хэрэглэгчийн өгөгдлийг AI хэрэгсэлд оруулдаггүй.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- БИДНИЙ ТУХАЙ -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-logo reveal"><div class="tile corners"><svg style="color:var(--red)"><use href="#ulzii"/></svg></div></div>
+    <div class="reveal">
+      <span class="eyebrow">/ Студийн тухай</span>
+      <h2>Таны <span class="grad-text">студи</span></h2>
+      <div class="loc">Вэб студи · Улаанбаатар, Монгол</div>
+      <p class="lead">Бид бизнес эрхлэгч, брэнд, бүтээгчдэд зориулан орчин үеийн, хурдан, найдвартай вэбсайт ба систем бүтээдэг жижиг баг. Эхний санаанаас нээлт хүртэл, нээлтийн дараа ч хамт ажиллана.</p>
+      <div class="chips">
+        <div class="chip"><i>✦</i>Дизайн</div>
+        <div class="chip"><i>&lt;/&gt;</i>Хөгжүүлэлт</div>
+        <div class="chip"><i>↗</i>SEO ба аналитик</div>
+        <div class="chip"><i>⟳</i>Тогтмол дэмжлэг</div>
+      </div>
+      <div class="contact">
+        <div><i>✉</i><a href="mailto:info@example.mn">info@example.mn</a></div>
+        <div><i>☎</i><a href="tel:+97699999999">+976 9999-9999</a></div>
+        <div><i>⌖</i>Улаанбаатар хот, Сүхбаатар дүүрэг</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="sec-head center reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title">Түгээмэл асуудаг <span class="grad-text">асуулт</span></h2></div>
+    <p class="sec-sub center reveal">Хамтран ажиллахаас өмнө ихэвчлэн асуудаг зүйлс.</p>
+    <div class="faq reveal">
+      <details><summary>Одоо байгаа вэбсайтыг маань шинэчилж болох уу?</summary><p>Болно. Одоогийн сайтыг тань шалгаад, шинэ загвараар бүрэн хийх эсвэл хэсэгчлэн сайжруулах санал гаргана.</p></details>
+      <details><summary>Ердийн төсөл хэр удаан үргэлжилдэг вэ?</summary><p>Энгийн танилцуулга сайт 2–4 долоо хоног, онлайн дэлгүүр ба захиалгат систем 1–3 сар орчим.</p></details>
+      <details><summary>Ямар бизнесүүдтэй ажилладаг вэ?</summary><p>Үйлчилгээ, худалдаа, сургалт, ресторан, ТББ, хувь хүний брэнд гээд бүх төрлийн байгууллагатай.</p></details>
+      <details><summary>Үйлчилгээний үнэ хэд вэ?</summary><p>Доорх «Багцууд» болон «Үнийн санал авах» хэсгээс ойролцоо үнээ шууд харж болно.</p></details>
+      <details><summary>Төлбөрийг хувааж төлж болох уу?</summary><p>Болно. Ихэвчлэн 50% урьдчилгаа, 50% нээлтийн үед төлдөг. Том төсөлд үе шаттай хуваана.</p></details>
+      <details><summary>Вэбсайтаа өөрөө засах боломжтой юу?</summary><p>Тийм. Мэдээ, зураг, үнэ зэргийг өөрөө засах админ хэсэг хийж, ашиглах зааварчилгаа өгнө.</p></details>
+      <details><summary>Хостинг, домэйн, имэйл тохируулахад туслах уу?</summary><p>Тийм. Бүгдийг нь бид тохируулж, хүлээлгэж өгнө.</p></details>
+      <details><summary>SEO болон аналитик хийдэг үү?</summary><p>Үндсэн SEO, Google Analytics, Search Console-ийн тохиргоо бүх багцад багтана.</p></details>
+      <details><summary>Нээлтийн дараа дэмжлэг үзүүлэх үү?</summary><p>Эхний сард үнэгүй засвар хийнэ. Дараа нь сарын арчилгааны багц сонгох боломжтой.</p></details>
+      <details><summary>Бэлэн болсны дараа өөрчлөлт хийж болох уу?</summary><p>Болно. Жижиг засварыг арчилгааны багцад, том өөрчлөлтийг тусдаа үнэлгээгээр хийнэ.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ПОРТФОЛИО (өөрийн ажлуудаар солино: thumb дотор <img src="..."> тавьж болно) -->
+<section id="portfolio">
+  <div class="wrap">
+    <div class="sec-head center reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title"><span class="grad-text">Портфолио</span></h2></div>
+    <p class="sec-sub center reveal">Бидний хийсэн ажлуудаас — төсөл бүр өөрийн гэсэн зорилготой.</p>
+    <div class="portfolio">
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 1</div><div class="body"><h3>Онлайн дэлгүүр</h3><div class="tags"><span>Дэлгүүр</span><span>QPay</span><span>Next.js</span></div></div></a>
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 2</div><div class="body"><h3>Сургалтын төв</h3><div class="tags"><span>Сургалт</span><span>Цаг захиалга</span></div></div></a>
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 3</div><div class="body"><h3>Мэдээллийн сайт</h3><div class="tags"><span>Мэдээ</span><span>PHP</span><span>Админ</span></div></div></a>
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 4</div><div class="body"><h3>Барилгын компани</h3><div class="tags"><span>Танилцуулга</span><span>SEO</span></div></div></a>
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 5</div><div class="body"><h3>Аялал жуулчлал</h3><div class="tags"><span>Аялал</span><span>Захиалга</span></div></div></a>
+      <a class="pf reveal" href="#"><div class="thumb"><span class="badge">● Нийтлэгдсэн</span>Төсөл 6</div><div class="body"><h3>Хувийн брэнд</h3><div class="tags"><span>Портфолио</span><span>Блог</span></div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- БАГЦ -->
+<section id="pricing" class="alt">
+  <div class="wrap">
+    <div class="sec-head center reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title">Төслийн <span class="grad-text">үнийн</span> шатлал</h2></div>
+    <p class="sec-sub center reveal">Ойролцоо үнэ. Таны хэрэгцээг сонсоод тодорхой үнийн санал гаргана.</p>
+    <div class="plans">
+      <div class="plan corners reveal">
+        <h3>Эхлэл</h3>
+        <div class="price grad-text">₮1,500,000 – ₮3,500,000</div>
+        <ul><li>Дизайн ба хөгжүүлэлт</li><li>1–5 хуудас</li><li>Утсанд тохирсон, SEO</li><li>Энгийн бизнес эсвэл портфолио сайт</li></ul>
+        <a href="#quote" class="btn btn-ghost btn-block">Би үүнийг хүсэж байна</a>
+      </div>
+      <div class="plan featured corners reveal">
+        <span class="pop">Түгээмэл</span>
+        <h3>Премиум түвшин</h3>
+        <div class="price grad-text">₮3,500,000+</div>
+        <ul><li>Бүрэн захиалгат дизайн</li><li>6+ хуудас</li><li>Блог, цаг захиалга, захиалгат логик</li><li>Өсөн нэмэгдэж буй бизнест тохиромжтой</li></ul>
+        <a href="#quote" class="btn btn-block">Би үүнийг хүсэж байна</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ҮНИЙН САНАЛ -->
+<section id="quote">
+  <div class="wrap">
+    <div class="sec-head center reveal"><svg class="ornament"><use href="#orn"/></svg><h2 class="sec-title"><span class="grad-text">Үнийн санал</span> авах</h2></div>
+    <p class="sec-sub center reveal">Хэдэн асуултад хариулаад төслийнхөө ойролцоо үнийг шууд хараарай.</p>
+    <form class="calc" id="quoteForm" action="send.php" method="post">
+      <div>
+        <div class="field">
+          <label for="type">Вэбсайтын төрөл</label>
+          <select id="type" name="type">
+            <option value="1500000">Танилцуулга сайт</option>
+            <option value="1200000">Нэг хуудас (landing page)</option>
+            <option value="3500000">Онлайн дэлгүүр</option>
+            <option value="4000000">Захиалгат систем</option>
+            <option value="6000000">Мобайл апп</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="pages">Хуудасны тоо</label>
+          <select id="pages" name="pages">
+            <option value="0">1 хуудас</option>
+            <option value="300000">2–5 хуудас</option>
+            <option value="800000" selected>6–10 хуудас</option>
+            <option value="1500000">10+ хуудас</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="lbl">Нэмэлт үйлчилгээ</span>
+          <div class="checks" id="extras">
+            <label><input type="checkbox" name="extras[]" value="Блог" data-price="300000">Блог</label>
+            <label><input type="checkbox" name="extras[]" value="Олон хэл" data-price="400000">Олон хэлний сонголт</label>
+            <label><input type="checkbox" name="extras[]" value="Контент бичих" data-price="300000">Контент бичих</label>
+            <label><input type="checkbox" name="extras[]" value="Онлайн төлбөр" data-price="500000">Онлайн төлбөр (QPay)</label>
+            <label><input type="checkbox" name="extras[]" value="Аналитик" data-price="150000">Аналитик ба хяналт</label>
+            <label><input type="checkbox" name="extras[]" value="Сошиал холболт" data-price="150000">Сошиал медиа холболт</label>
+            <label><input type="checkbox" name="extras[]" value="Цаг захиалга" data-price="600000">Цаг захиалгын систем</label>
+            <label><input type="checkbox" name="extras[]" value="Хэрэглэгчийн бүртгэл" data-price="700000">Хэрэглэгчийн бүртгэл, нэвтрэлт</label>
+            <label><input type="checkbox" name="extras[]" value="Лого, брэнд" data-price="500000">Лого, брэнд дизайн</label>
+            <label><input type="checkbox" name="extras[]" value="Фото, видео" data-price="400000">Фото, видео зураг авалт</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="timeline">Хугацаа</label>
+          <select id="timeline" name="timeline">
+            <option value="1">Яаралтай биш</option>
+            <option value="1.15">1 сарын дотор</option>
+            <option value="1.3">2 долоо хоногийн дотор (яаралтай)</option>
+          </select>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="name">Нэр</label><input type="text" id="name" name="name" placeholder="Таны нэр" required></div>
+          <div class="field"><label for="email">Имэйл</label><input type="email" id="email" name="email" placeholder="tany@email.com" required></div>
+        </div>
+        <div class="field"><label for="phone">Утас</label><input type="tel" id="phone" name="phone" placeholder="+976 9999-9999"></div>
+        <div class="field"><label for="msg">Зурвас</label><textarea id="msg" name="message" rows="4" placeholder="Төслийнхөө талаар товч бичнэ үү"></textarea></div>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <input type="hidden" name="estimate" id="estimate">
+        <button class="btn btn-pill" type="submit">Үнийн санал илгээх</button>
+        <div class="form-msg" id="formMsg" role="status"></div>
+      </div>
+
+      <aside class="summary corners">
+        <h3>Шууд тооцоолол</h3>
+        <div class="range">Таны сонголтоор шинэчлэгдэнэ</div>
+        <div class="total grad-text" id="total">₮0</div>
+        <div class="range" id="range"></div>
+        <div class="lines">
+          <div><span>Үндсэн хөгжүүлэлт</span><b id="lBase">₮0</b></div>
+          <div><span>Хуудас</span><b id="lPages">₮0</b></div>
+          <div><span>Нэмэлт үйлчилгээ</span><b id="lExtras">₮0</b></div>
+          <div><span>Хугацааны нэмэгдэл</span><b id="lRush">₮0</b></div>
+        </div>
+        <h4>Үргэлж багтана (үнэгүй)</h4>
+        <ul><li>Утсанд тохирсон дизайн</li><li>SSL гэрчилгээ</li><li>Үндсэн SEO</li><li>Нээлтийн дараах 1 сарын дэмжлэг</li></ul>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="alhan-band red"></div>
+  <div class="wrap">
+    <div class="f-cols">
+      <div>
+        <a href="#home" class="logo"><svg style="color:var(--red)"><use href="#ulzii"/></svg></a>
+        <p>Утсанд гоё харагддаг, төвөггүй, найдвартай вэбсайтыг бид бүтээнэ.</p>
+      </div>
+      <div>
+        <h4>Хурдан холбоосууд</h4>
+        <a href="#home">Эхлэл</a><a href="#services">Үйлчилгээнүүд</a><a href="#portfolio">Портфолио</a><a href="#faq">Түгээмэл асуулт</a><a href="#about">Холбогдох</a>
+      </div>
+      <div>
+        <h4>Үнэлгээ авах</h4>
+        <a href="#quote" class="btn">Үнэгүй үнэлгээ</a>
+      </div>
+      <div>
+        <h4>Холбогдох</h4>
+        <p>✉ <a href="mailto:info@example.mn">info@example.mn</a></p>
+        <p>⌖ Улаанбаатар хот, Сүхбаатар дүүрэг</p>
+        <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="LinkedIn">in</a></div>
+      </div>
+    </div>
+    <div class="f-legal"><a href="#">Нууцлалын бодлого</a> · <a href="#">Үйлчилгээний нөхцөл</a></div>
+    <div class="f-copy">© <span id="year"></span> Таны студи. Бүх эрх хуулиар хамгаалагдсан.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
