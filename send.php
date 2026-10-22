@@ -22,7 +22,7 @@ $email = filter_var($_POST['email'] ?? '', FILTER_VALIDATE_EMAIL);
 if ($name === '' || !$email) reply(false, 'Нэр, имэйлээ зөв бөглөнө үү.');
 
 $types = [
-    '1000000' => 'Хөгжүүлэлт', '1500000' => 'Дизайн ба хөгжүүлэлт',
+    '1800000' => 'Хөгжүүлэлт', '2300000' => 'Дизайн ба хөгжүүлэлт',
 ];
 $extras = array_map('strip_tags', (array) ($_POST['extras'] ?? []));
 
